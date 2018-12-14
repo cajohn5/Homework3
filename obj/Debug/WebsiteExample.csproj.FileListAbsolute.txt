@@ -1,0 +1,2 @@
+Z:\Downloads\Homework3\obj\Debug\WebsiteExample.csprojAssemblyReference.cache
+Z:\Downloads\Homework3\obj\Debug\WebsiteExample.csproj.CoreCompileInputs.cache

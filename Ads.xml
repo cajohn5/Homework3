@@ -1,0 +1,33 @@
+﻿<Advertisements>
+  <Ad>
+    <ImageUrl>ad1.jpg</ImageUrl>
+    <NavigateUrl>https://mail.google.com/</NavigateUrl>
+    <AlternateText>Ad 1 is an ad for Gmail</AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword>mail</Keyword>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>ad2.jpg</ImageUrl>
+    <NavigateUrl>https://news.google.com/</NavigateUrl>
+    <AlternateText>Ad 2 is about News</AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword>news</Keyword>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>ad3.jpg</ImageUrl>
+    <NavigateUrl>https://www.youtube.com/</NavigateUrl>
+    <AlternateText>Ad 3 is about YouTube</AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword>videos</Keyword>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>ad4.jpg</ImageUrl>
+    <NavigateUrl>https://plus.google.com/</NavigateUrl>
+    <AlternateText>Ad 4 is about Google+</AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword>social</Keyword>
+  </Ad>
+</Advertisements>

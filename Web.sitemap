@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+  <siteMapNode url="" title="Navigation" description="">
+
+      <siteMapNode url="~/Ads" title="View the Ad Gallery" description="" />
+      <siteMapNode url="~/EventCalendar" title="Visit our Event Calendar Creator" description="" />
+      <siteMapNode url="~/SocialMedia" title="Check out SportsPro on Twitter" description="" />
+
+    <siteMapNode url="~/ContactUs" title="Contact Us" description="" />
+  </siteMapNode>
+</siteMap>

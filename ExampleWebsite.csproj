@@ -1,0 +1,153 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{8DAF2811-796F-4FFF-89FD-4C58F4AEBCE0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>ExampleWebsite</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ad1.jpg" />
+    <Content Include="ad2.jpg" />
+    <Content Include="ad3.jpg" />
+    <Content Include="ad4.jpg" />
+    <Content Include="Administration\CustomerMaintenance.aspx" />
+    <Content Include="Administration\Default.aspx" />
+    <Content Include="Administration\Images\Free-sports-hockey-clipart-clip-art-pictures-graphics-2-image.jpg" />
+    <Content Include="Administration\IncidentDisplay.aspx" />
+    <Content Include="Administration\ProductMaintenance.aspx" />
+    <Content Include="Administration\TechnicianIndicentSummary.aspx" />
+    <Content Include="Administration\TechnicianMaintenance.aspx" />
+    <Content Include="Ads.aspx" />
+    <Content Include="Ads.xml" />
+    <Content Include="App_Data\Events.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\Events_log.ldf">
+      <DependentUpon>Events.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\TechSupport.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\TechSupport_log.ldf">
+      <DependentUpon>TechSupport.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ContactDisplay.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="CustomerDisplay.aspx" />
+    <Content Include="CustomerIncidentDisplay.aspx" />
+    <Content Include="CustomerSurvey.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="EventCalendar.aspx" />
+    <Content Include="FileNotFound.aspx" />
+    <Content Include="HttpError.aspx" />
+    <Content Include="Images\Free-sports-hockey-clipart-clip-art-pictures-graphics-2-image.jpg" />
+    <Content Include="IncidentUpdate.aspx" />
+    <Content Include="NoAccess.aspx" />
+    <Content Include="ProductRegistration.aspx" />
+    <Content Include="SocialMedia.aspx" />
+    <Content Include="SurveyComplete.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administration\CustomerMaintenance.aspx.cs" />
+    <Compile Include="Administration\Default.aspx.cs" />
+    <Compile Include="Administration\IncidentDisplay.aspx.cs" />
+    <Compile Include="Administration\ProductMaintenance.aspx.cs" />
+    <Compile Include="Administration\TechnicianIndicentSummary.aspx.cs" />
+    <Compile Include="Administration\TechnicianMaintenance.aspx.cs" />
+    <Compile Include="Ads.aspx.cs" />
+    <Compile Include="App_Code\App_Start\RouteConfig.cs" />
+    <Compile Include="App_Code\Customer.cs" />
+    <Compile Include="App_Code\CustomerList.cs" />
+    <Compile Include="App_Code\Incident.cs" />
+    <Compile Include="App_Code\IncidentDB.cs" />
+    <Compile Include="App_Code\Sample.designer.cs" />
+    <Compile Include="App_Code\Survey.cs" />
+    <Compile Include="App_Code\TechnicianDB.cs" />
+    <Compile Include="App_Code\TechSupportDB.cs" />
+    <Compile Include="ContactDisplay.aspx.cs" />
+    <Compile Include="ContactUs.aspx.cs" />
+    <Compile Include="CustomerDisplay.aspx.cs" />
+    <Compile Include="CustomerIncidentDisplay.aspx.cs" />
+    <Compile Include="CustomerSurvey.aspx.cs" />
+    <Compile Include="Default.aspx.cs" />
+    <Compile Include="EventCalendar.aspx.cs" />
+    <Compile Include="FileNotFound.aspx.cs" />
+    <Compile Include="HttpError.aspx.cs" />
+    <Compile Include="IncidentUpdate.aspx.cs" />
+    <Compile Include="MasterPage.master.cs" />
+    <Compile Include="NoAccess.aspx.cs" />
+    <Compile Include="ProductRegistration.aspx.cs" />
+    <Compile Include="Site.Mobile.Master.cs" />
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocialMedia.aspx.cs" />
+    <Compile Include="SurveyComplete.aspx.cs" />
+    <Compile Include="ViewSwitcher.ascx.cs" />
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\Homework3\v15\.suo" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="App_Code\Sample.dbml" />
+    <None Include="App_Code\Sample.dbml.layout" />
+    <None Include="App_Data\PublishProfiles\WDrive.pubxml" />
+    <None Include="MasterPage.master" />
+    <None Include="packages.config" />
+    <None Include="Site.Mobile.Master" />
+    <None Include="Web.config" />
+    <None Include="Web.Debug.config" />
+    <None Include="Web.sitemap" />
+    <None Include="website.publishproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\ExampleWebsite\v15\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
